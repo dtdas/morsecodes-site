@@ -11,7 +11,7 @@
       <v-spacer></v-spacer>
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
     </v-app-bar>
-    <v-navigation-drawer v-model="drawer" temporary>
+    <v-navigation-drawer v-model="drawer" absolute temporary right>
       <v-list>
         <v-list-item
           v-for="link in links"
