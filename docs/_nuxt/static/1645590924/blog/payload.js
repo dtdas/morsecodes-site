@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/Blog", {data:[{articles:[{slug:"fetchxml-liquid-tag-for-read-operations-portals",title:"FetchXML Liquid Tag for Read Operations in Power Apps Portals"}]}],fetch:{},mutations:void 0});
