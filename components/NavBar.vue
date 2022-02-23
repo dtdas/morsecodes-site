@@ -1,10 +1,10 @@
 <template>
   <nav>
-    <v-app-bar flat>
+    <v-app-bar flat prominent>
       <nuxt-link to="/">
         <v-img
-          max-height="60"
-          max-width="150"
+          max-height="110"
+          max-width="256"
           :src="require('~/static/morselogo.png')"
         />
       </nuxt-link>
@@ -34,9 +34,9 @@ export default {
     return {
       drawer: false,
       links: [
-        { text: "Home", route: "/" },
-        { text: "About", route: "/about" },
-        { text: "Blog", route: "/blog" },
+        { text: 'Home', route: '/' },
+        { text: 'About', route: '/about' },
+        { text: 'Blog', route: '/blog' },
       ],
     }
   },

@@ -10,12 +10,14 @@ There are a few ways in Portals to read records from Dataverse - built in lists 
 
 <br>
 
-At the top of the Page Template, include the xml code, replacing the sample names with the information from your table.
+At the top of the **Page Template**, include the xml code, replacing the sample names with the information from your table.
 
 <br>
 
 Entity name: the table you would like to display data from
+
 Order attribute: order by any column name
+
 Note: the following code includes all columns, but if you'd only like to include certain columns, you can specify them by replacing `all-attributes />` with `<attribute name="column1" />` for each column.
 
 ```{% fetchxml get_some_data %}
@@ -28,6 +30,10 @@ Note: the following code includes all columns, but if you'd only like to include
 {% endfetchxml %}
 {% assign query_results = get_some_data.results.entities %}
 ```
+
+<br>
+
+## Use
 
 Use a for loop to iterate through the records and display the data. In this example, we list the column1 custom column for each record in the table. Include this code directly inside any html.
 
